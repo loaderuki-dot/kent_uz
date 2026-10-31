@@ -15,7 +15,6 @@
             -webkit-backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
-        /* Обновленный рабочий фоновый рисунок */
         .bg-hero-pattern {
             background: linear-gradient(to right, rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.65)), 
                         url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;
@@ -36,6 +35,7 @@
             <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
                 <a href="#asosiy" class="hover:text-indigo-400 transition">Asosiy</a>
                 <a href="#yo-nalishlar" class="hover:text-indigo-400 transition">Yo'nalishlar</a>
+                <a href="#darsliklar" class="hover:text-indigo-400 transition">Darsliklar</a>
                 <a href="#aloqa" class="hover:text-indigo-400 transition">Aloqa</a>
             </nav>
             <a href="https://t.me/kry0n_1" target="_blank" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-indigo-600/30 transition duration-200">
@@ -62,8 +62,8 @@
                         <a href="#yo-nalishlar" class="bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-3.5 rounded-xl font-semibold shadow-lg shadow-indigo-600/30 transition">
                             Yo'nalishlar
                         </a>
-                        <a href="#aloqa" class="glass-card hover:bg-slate-800/80 text-white px-8 py-3.5 rounded-xl font-semibold transition border border-slate-700">
-                            Aloqaga chiqish
+                        <a href="#darsliklar" class="glass-card hover:bg-slate-800/80 text-white px-8 py-3.5 rounded-xl font-semibold transition border border-slate-700">
+                            Video Darsliklar
                         </a>
                     </div>
                 </div>
@@ -109,8 +109,38 @@
             </div>
         </section>
 
+        <!-- Video Darsliklar Section -->
+        <section id="darsliklar" class="py-20 bg-slate-900 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-3xl font-bold text-white mb-4">Bepul Video Darsliklar</h2>
+                    <p class="text-slate-400">IT sohasini noldan o'rganish uchun maxsus tayyorlangan amaliy video darslar.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Video Card 1 -->
+                    <div class="glass-card p-4 rounded-2xl border border-slate-800">
+                        <div class="aspect-video w-full rounded-xl overflow-hidden mb-4">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="IT Darslik 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Veb dasturlashga kirish (HTML & CSS)</h3>
+                        <p class="text-slate-400 text-sm">Birinchi noldan shaxsiy veb-saytingizni yaratishni o'rganing.</p>
+                    </div>
+
+                    <!-- Video Card 2 -->
+                    <div class="glass-card p-4 rounded-2xl border border-slate-800">
+                        <div class="aspect-video w-full rounded-xl overflow-hidden mb-4">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="IT Darslik 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Kiberxavfsizlik va Tarmoq asoslari</h3>
+                        <p class="text-slate-400 text-sm">Axborot xavfsizligi hamda kiberxavfsizlik sohasining asosiy tushunchalari.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Aloqa Section -->
-        <section id="aloqa" class="py-20 bg-slate-900 border-t border-slate-800">
+        <section id="aloqa" class="py-20 bg-slate-950 border-t border-slate-800">
             <div class="max-w-4xl mx-auto px-4 text-center">
                 <h2 class="text-3xl font-bold text-white mb-4">Biz bilan bog'laning</h2>
                 <p class="text-slate-400 mb-10">Savollaringiz bormi yoki loyiha bo'yicha gaplashmoqchimisiz? Quyidagi ijtimoiy tarmoqlar orqali bog'lanishingiz mumkin:</p>
@@ -140,35 +170,7 @@
                 </div>
             </div>
         </section>
-    </main><!-- Video Darsliklar Section -->
-<section id="darsliklar" class="py-20 bg-slate-900 border-t border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-white mb-4">Bepul Video Darsliklar</h2>
-            <p class="text-slate-400">IT sohasini 0 dan o'rganish uchun tayyorlangan maxsus amaliy videodarslar.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Video Card 1 -->
-            <div class="glass-card p-4 rounded-2xl border border-slate-800">
-                <div class="aspect-video w-full rounded-xl overflow-hidden mb-4">
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="IT Darslik 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <h3 class="text-xl font-bold text-white mb-2">Veb dasturlashga kirish (HTML & CSS)</h3>
-                <p class="text-slate-400 text-sm">Birinchi noldan shaxsiy veb-saytingizni yaratishni o'rganing.</p>
-            </div>
-
-            <!-- Video Card 2 -->
-            <div class="glass-card p-4 rounded-2xl border border-slate-800">
-                <div class="aspect-video w-full rounded-xl overflow-hidden mb-4">
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="IT Darslik 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <h3 class="text-xl font-bold text-white mb-2">Kiberxavfsizlik va Tarmoq asoslari</h3>
-                <p class="text-slate-400 text-sm">Axborot xavfsizligi hamda kiberxavfsizlik sohasining asosiy tushunchalari.</p>
-            </div>
-        </div>
-    </div>
-</section>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-slate-950 border-t border-slate-800 py-8">
