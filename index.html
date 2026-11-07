@@ -5,16 +5,37 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#090d18">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta name="description" content="Nexorya — o‘zbekcha IT videolar, amaliy vazifalar, testlar va fokus uchun musiqa.">
-  <title>Nexorya — IT  olg'a </title>
+  <meta name="description" content="Nexorya — o‘zbekcha IT video darslari, amaliy mashqlar, 5 savollik test, Pomodoro fokus taymeri va o‘qish uchun musiqa. Bepul boshlang.">
+  <meta name="keywords" content="IT darslari o'zbekcha, dasturlash o'zbekcha, kompyuter qanday ishlaydi, Nexorya">
+  <meta name="author" content="Nexorya">
+  <link rel="canonical" href="https://nexorya.uz/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="uz_UZ">
+  <meta property="og:site_name" content="Nexorya">
+  <meta property="og:title" content="Nexorya — O‘zbekcha IT darslari, test va fokus">
+  <meta property="og:description" content="Qiziqishdan boshla. IT bilan rivojlan. O‘zbekcha videolar, kichik mashqlar, test va fokus taymeri — hammasi bir joyda.">
+  <meta property="og:url" content="https://nexorya.uz/">
+  <meta property="og:image" content="https://nexorya.uz/og-cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nexorya — O‘zbekcha IT darslari, test va fokus">
+  <meta name="twitter:description" content="O‘zbekcha videolar, kichik mashqlar, test va fokus taymeri.">
+  <meta name="twitter:image" content="https://nexorya.uz/og-cover.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23090d18'/%3E%3Ctext x='32' y='44' font-family='Arial' font-size='34' font-weight='800' fill='%2366e3d4' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
+  <title>Nexorya — O‘zbekcha IT darslari, test va fokus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Nexorya","url":"https://nexorya.uz/","inLanguage":"uz","description":"O‘zbekcha IT video darslari, test va fokus taymeri."}</script>
   <script src="./script.js" defer></script>
 </head>
 <body>
+<a class="skip-link" href="#lessons">Darslarga o‘tish</a>
 <header>
   <nav class="wrap" aria-label="Asosiy menyu">
-    <a href="#home" class="logo">Nexo<span>rya</span></a>
-    <div class="links">
+    <a href="#home" class="logo" aria-label="Nexorya bosh sahifa">Nexo<span>rya</span></a>
+    <button id="menuBtn" class="menu-btn" type="button" aria-expanded="false" aria-controls="mainLinks" aria-label="Menyuni ochish">☰ Menyu</button>
+    <div class="links" id="mainLinks">
       <a href="#lessons">Darslar</a>
       <a href="#quiz">Test</a>
       <a href="#focus">Fokus</a>
@@ -23,87 +44,72 @@
     </div>
   </nav>
 </header>
-
 <main>
   <section id="home" class="hero">
     <div class="wrap">
-      <span class="badge">● Biz ishni endi boshladik</span>
+      <span class="badge">● Biz ishni endi boshladik — har hafta yangi dars</span>
       <h1>Qiziqishdan boshla.<br><span>IT bilan rivojlan.</span></h1>
-      <p>O‘zbekcha videolar, kichik mashqlar va o‘qish uchun sokin muhit. Birinchi qadamingni bugun tashla.</p>
+      <p>O‘zbekcha videolar, kichik mashqlar va o‘qish uchun sokin muhit. Birinchi qadamingni bugun tashla — bepul.</p>
       <div class="actions">
         <a href="#lessons" class="btn primary">O‘rganishni boshlash ↗</a>
         <a href="#quiz" class="btn">Bilimingni sinash</a>
       </div>
+      <div class="hero-stats" aria-label="Sayt statistikasi">
+        <div><strong>4</strong><span>video dars</span></div>
+        <div><strong>5</strong><span>test savoli</span></div>
+        <div><strong>3</strong><span>fokus musiqasi</span></div>
+      </div>
       <div class="hero-note">Katta raqamlar emas — haqiqiy qiziqishdan boshlaymiz.</div>
     </div>
   </section>
-
   <section>
     <div class="wrap">
       <span class="eyebrow">QAYERDAN BOSHLAYMAN?</span>
       <h2>Sening birinchi uch qadaming</h2>
       <div class="grid three">
-        <article class="card pad">
-          <span class="step">01</span>
-          <h3>Tomosha qil</h3>
-          <p>IT haqidagi bitta videoni tanla va yangi tushunchalarni yozib ol.</p>
-        </article>
-        <article class="card pad">
-          <span class="step">02</span>
-          <h3>Amalda bajar</h3>
-          <p>Video ostidagi kichik vazifani bajar. Faqat ko‘rish bilan cheklanma.</p>
-        </article>
-        <article class="card pad">
-          <span class="step">03</span>
-          <h3>Bilimingni tekshir</h3>
-          <p>Qisqa testdan o‘t va qaysi mavzuni qaytarishni aniqlab ol.</p>
-        </article>
+        <article class="card pad"><span class="step">01</span><h3>Tomosha qil</h3><p>IT haqidagi bitta videoni tanla va yangi tushunchalarni yozib ol.</p></article>
+        <article class="card pad"><span class="step">02</span><h3>Amalda bajar</h3><p>Video ostidagi kichik vazifani bajar. Faqat ko‘rish bilan cheklanma.</p></article>
+        <article class="card pad"><span class="step">03</span><h3>Bilimingni tekshir</h3><p>Qisqa testdan o‘t va qaysi mavzuni qaytarishni aniqlab ol.</p></article>
       </div>
     </div>
   </section>
-
   <section id="lessons">
     <div class="wrap">
       <span class="eyebrow">O‘ZBEKCHA KONTENT</span>
       <h2>Video darslar</h2>
       <p>Videoni tanla, mashqni bajar va ko‘rilganini belgilab qo‘y.</p>
-
       <div class="filters">
-        <label>
-          Video qidirish
-          <input id="search" type="search" placeholder="Masalan: kompyuter">
-        </label>
-        <label>
-          Yo‘nalish
-          <select id="category">
-            <option value="all">Barcha videolar</option>
-            <option value="intro">IT bilan tanishuv</option>
-            <option value="coding">Dasturlash</option>
-            <option value="computer">Kompyuter</option>
-          </select>
-        </label>
+        <label>Video qidirish<input id="search" type="search" placeholder="Masalan: protsessor, kompyuter, dasturlash" autocomplete="off"></label>
+        <label>Yo‘nalish<select id="category"><option value="all">Barcha videolar</option><option value="intro">IT bilan tanishuv</option><option value="coding">Dasturlash</option><option value="computer">Kompyuter</option></select></label>
       </div>
-
       <p id="progress" class="small" aria-live="polite"></p>
       <div id="lessonGrid" class="grid"></div>
-      <p id="noResults" hidden>Bu qidiruv bo‘yicha video topilmadi.</p>
+      <noscript><div class="grid">
+        <article class="card pad"><h3>IT bilan tanishuv</h3><p>Avval tanlagan videong bilan o‘rganishni boshla. YouTube: youtu.be/o6aucC8_ot8</p></article>
+        <article class="card pad"><h3>Dasturlash nima? — Texnoplov</h3><p>Dasturlash olami bilan tanishuv. YouTube: youtu.be/0NdDKClb1eQ</p></article>
+        <article class="card pad"><h3>Kompyuter qanday ishlaydi? — Branch Education (o‘zbekcha tarjima)</h3><p>Protsessor, xotira va disk vazifalari. YouTube: youtu.be/c6gdO6mwg8w</p></article>
+        <article class="card pad"><h3>Kompyuterlar qanday ishlaydi? — Khan Academy Uzbek</h3><p>Kiruvchi va chiquvchi ma’lumot. YouTube: youtu.be/TB-y_Twwv9c</p></article>
+      </div></noscript>
+      <p id="noResults" hidden>Bu qidiruv bo‘yicha video topilmadi. Boshqa so‘z bilan urinib ko‘r.</p>
       <p class="small">Belgilar faqat shu brauzerda saqlanadi. Bu avtomatik tomosha kuzatuvi emas.</p>
     </div>
   </section>
-
   <section id="quiz">
     <div class="wrap">
       <span class="eyebrow">BILIMINGNI SINAB KO‘R</span>
       <h2>IT bo‘yicha kichik test</h2>
+      <p class="small" id="lastScore"></p>
       <form id="quizForm" class="card pad">
         <div id="questions"></div>
-        <button class="primary" type="submit">Natijani ko‘rish</button>
-        <button type="reset">Qayta ishlash</button>
+        <div class="actions">
+          <button class="primary" type="submit">Natijani ko‘rish</button>
+          <button type="reset" class="btn-ghost">Qayta boshlash</button>
+        </div>
         <p id="quizResult" role="status"></p>
+        <div id="quizReview"></div>
       </form>
     </div>
   </section>
-
   <section id="focus">
     <div class="wrap">
       <span class="eyebrow">O‘ZING UCHUN VAQT</span>
@@ -112,38 +118,33 @@
         <div class="card pad">
           <p class="quote" id="quote">Kayfiyatni kutma. Birinchi kichik qadamni tashla.</p>
           <button id="nextQuote" type="button">Yana bir fikr ↻</button>
-
           <h3>Bugungi maqsadlar</h3>
-          <label class="check">
-            <input type="checkbox" data-task="video"> Bitta video ko‘rish
-          </label>
-          <label class="check">
-            <input type="checkbox" data-task="practice"> 20 daqiqa amaliyot
-          </label>
-          <label class="check">
-            <input type="checkbox" data-task="note"> Yangi tushunchani yozib olish
-          </label>
+          <label class="check"><input type="checkbox" data-task="video"> Bitta video ko‘rish</label>
+          <label class="check"><input type="checkbox" data-task="practice"> 20 daqiqa amaliyot</label>
+          <label class="check"><input type="checkbox" data-task="note"> Yangi tushunchani yozib olish</label>
           <p class="small">Har kunning belgilari alohida saqlanadi.</p>
         </div>
-
         <div class="card pad">
-          <h3>Fokus taymeri</h3>
+          <h3>Fokus taymeri <span class="pill" id="cycleLabel">1 / 4 fokus</span></h3>
           <p>Bitta vazifani tanla. Qolganini vaqtincha chetga qo‘y.</p>
           <div id="clock" class="timer" role="timer" aria-label="Qolgan vaqt">25:00</div>
+          <p id="timerMode" class="small">Hozir: Fokus vaqti</p>
           <div class="actions">
             <button id="startTimer" class="primary" type="button">Boshlash</button>
-            <button id="resetTimer" type="button">Qayta boshlash</button>
+            <button id="resetTimer" type="button">To‘xtatish</button>
           </div>
           <div class="actions">
-            <button type="button" data-minutes="25">25 daqiqa fokus</button>
-            <button type="button" data-minutes="5">5 daqiqa tanaffus</button>
+            <button type="button" data-minutes="25" data-mode="focus">25 daqiqa fokus</button>
+            <button type="button" data-minutes="5" data-mode="break">5 daqiqa tanaffus</button>
+            <button type="button" data-minutes="15" data-mode="long">15 daqiqa uzun tanaffus</button>
           </div>
+          <label class="check">O‘z vaqtim (daqiqa)<input id="customMinutes" type="number" min="1" max="120" value="25" inputmode="numeric"></label>
+          <label class="check"><input type="checkbox" id="soundOn" checked> Vaqt tugaganda ovoz + bildirishnoma</label>
           <p id="timerStatus" role="status">Tayyormisan?</p>
         </div>
       </div>
     </div>
   </section>
-
   <section id="music">
     <div class="wrap">
       <span class="eyebrow">SEN TANLAGAN MUSIQALAR</span>
@@ -153,27 +154,17 @@
       <p class="small">Videolar o‘z mualliflariga tegishli. Pleer ishlamasa, YouTube havolasidan foydalan.</p>
     </div>
   </section>
-
-  <section>
+  <section id="projects">
     <div class="wrap">
+      <span class="eyebrow">AMALIYOT</span>
       <h2>Kichik loyiha g‘oyalari</h2>
       <div class="grid three">
-        <article class="card pad">
-          <h3>Shaxsiy sahifa</h3>
-          <p>O‘zing, qiziqishlaring va aloqa havolalaring bilan portfolio yarat.</p>
-        </article>
-        <article class="card pad">
-          <h3>Vazifalar ro‘yxati</h3>
-          <p>Vazifa qo‘shish va bajarilganini belgilash funksiyasini yoz.</p>
-        </article>
-        <article class="card pad">
-          <h3>IT viktorinasi</h3>
-          <p>O‘rganganlaringdan beshta savolli test tayyorla.</p>
-        </article>
+        <article class="card pad"><h3>Shaxsiy sahifa</h3><p>O‘zing, qiziqishlaring va aloqa havolalaring bilan portfolio yarat.</p></article>
+        <article class="card pad"><h3>Vazifalar ro‘yxati</h3><p>Vazifa qo‘shish va bajarilganini belgilash funksiyasini yoz.</p></article>
+        <article class="card pad"><h3>IT viktorinasi</h3><p>O‘rganganlaringdan beshta savolli test tayyorla.</p></article>
       </div>
     </div>
   </section>
-
   <section id="contact">
     <div class="wrap card pad">
       <h2>Birga rivojlanamiz.</h2>
@@ -185,13 +176,6 @@
     </div>
   </section>
 </main>
-
-<footer>
-  <div class="wrap">
-    © <span id="year">2026</span> Nexorya · ITni birga o‘rganamiz.
-    <p id="storageStatus" class="small">Progress va maqsadlar faqat shu brauzerda saqlanadi.</p>
-    <a href="#home">Tepaga ↑</a>
-  </div>
-</footer>
+<footer><div class="wrap">© <span id="year">2026</span> Nexorya · ITni birga o‘rganamiz.<p id="storageStatus" class="small">Progress va maqsadlar faqat shu brauzerda saqlanadi.</p><a href="#home">Tepaga ↑</a></div></footer>
 </body>
 </html>
